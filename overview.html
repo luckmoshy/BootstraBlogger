@@ -1,0 +1,1385 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="max-age=604800" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="BoostraBlogger is where people build blogger. More than 20,000 people use bootstraBlogger framework to Suitable Blogger, fork, and contribute to this projects.">
+
+<title>BoostraBlogger Xml and Materials UI</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+<!-- Bootstrap-ecommerce -->
+<script src="Bootsrablogger-xml/js/jquery-2-html/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+<script src="Bootsrablogger-xml/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<link href="Bootsrablogger-xml/css/bootstrap.css?v=1.0" rel="stylesheet" type="text/css"/>
+<link href="Bootsrablogger-xml/css/ui.css?v=1.0" rel="stylesheet" type="text/css"/>
+
+<link href="Bootsrablogger-xml/fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+<link href="Bootsrablogger-xml/css/responsive.css?v=1.0" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- custom -->
+<link href="assets/css/bloggercss.css?v=1.0" rel="stylesheet"/>
+<link href="assets/css/bootstrap.css?v=1.0" rel="stylesheet"/>
+<script src="assets/js/bloggerjs.js?v=1.0" type="text/javascript"></script>
+
+
+<!-- doc plugins -->
+<script src="cdn.jsdelivr.net/npm/clipboard%402/dist/clipboard.min.js"></script>
+
+<link href="assets/plugins/prism/prism.css" rel="stylesheet" >
+<script src="assets/plugins/prism/prism.js"></script>
+
+
+<script type="text/javascript">
+
+Prism.plugins.customClass.prefix('prism-');
+
+$(document).ready(function(){
+
+	new ClipboardJS('.btn-copy');
+
+	$('.showcode').click(function(e){
+		e.preventDefault();
+
+		var mydata = $(this).attr('data-html');
+
+		var myhtml = $('#'+mydata).html();
+		 $('#loadhere').text(myhtml);
+		Prism.highlightAll();
+		$('#modal_code').modal('show');	 
+
+	});
+
+
+
+	$('.showcode-chars').click(function(e){
+		e.preventDefault();
+
+		var mydata = $(this).attr('data-html');
+		var myhtml = $('#'+mydata).text();
+		$('#loadhere').text(myhtml);
+		Prism.highlightAll();
+		$('#modal_code').modal('show');	 
+
+	});
+
+//	$.fn.modal.Constructor.prototype._enforceFocus = function() {};
+
+	
+});
+
+</script>
+
+<style>
+.btn-clipboard{display:none }
+</style>
+</head>
+<body class="language-html">
+
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" id="modal_hire" role="dialog">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Let's talk about...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        &times
+        </button>
+      </div>
+      <div class="modal-body">
+		<ul class="list-check">
+			<li>UI/UX designing for  Web &amp Mobile </li>
+			<li>Converting your design into valid HTML5/CSS code</li>
+			<li>Customize this UI kit for your project</li>
+			<li>Have touble with downloading?</li>
+		</ul>
+		<p>Portfolio: <a href="www.nunuablog" target="_blank">Themes</a> <br> 
+		Email me: luckmoshy@gmail.com <br> 
+		</p>
+		<p class="text-success">I will reply during the day</p>
+      </div>
+    </div>
+  </div>
+</div> <!-- modal.// -->
+
+<!-- ========================= SECTION HEADER ========================= -->
+<header class="main-header fixed-top">
+	<nav class="navbar navbar-light bg-white border-bottom navbar-expand justify-content-between flex-column flex-lg-row">
+	<div class="container">
+	<a href="developer.xml.html" class="navbar-brand">
+		<img src="assets/images/logo.png" class="logo" height="36">
+	</a>
+	<div>
+		<a class="btn btn-warning d-none d-lg-inline-block" href="down/download.html">Download</a>
+	</div>
+	<div class="navbar-top-wrap">
+	    <ul class="nav nav-header">
+		  <li class="nav-item">
+		    <a class="nav-link" href="https://www.freebloggertemplatetz.com/">Templates</a>
+		  </li>
+		   <li class="nav-item active">
+		    <a class="nav-link" href="developer.xml.html">Home</a>
+		  </li>
+		</ul>
+	</div>
+
+	
+		</div>
+</nav>
+</header>
+<!-- ========================= SECTION HEADER END // ========================= -->
+<div class="main-wrapper">
+<!-- ========================= SECTION CONTENT ========================= -->
+<aside class="aside-doc">
+<div class="aside-body">
+ <button class="btn m-3 btn-outline-primary d-md-none" type="button" data-toggle="collapse" data-target="#navbar_aside"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg> Components </button>
+<nav  class="menu-wrap collapse" id="navbar_aside">
+	<div>
+		<a href="#intro" class="link-title h6">Getting started</a>
+		<ul class="menu-aside">
+			<li> <a class="page-scroll nav-link" href="#intro">Introduction</a> </li>
+			<li> <a class="page-scroll nav-link" href="#download">BootstrapBlogger  Download</a> </li>
+			<li> <a class="page-scroll nav-link" href="#license">BootstrapBlogger License</a> </li>
+			<li> <a class="page-scroll nav-link" href="#start">Quick start</a> </li>
+		</ul>
+	</div>
+
+	<div>
+		<a href="#colors" class="link-title h6">BootstraBlogger  Content</a>
+		<ul class="menu-aside">
+			<li> <a class="page-scroll nav-link" href="#colors">Blogger Colors</a> </li>
+			<li> <a class="page-scroll nav-link" href="#typography">Blogger  Typography</a> </li>
+			<li> <a class="page-scroll nav-link" href="#icons">Blogger  Icons</a> </li>
+			<li> <a class="page-scroll nav-link" href="#helper_classes">Blogger  Helper classes</a> </li>
+		</ul>
+	</div>
+
+
+		
+</nav>
+
+</div><!--  aside-contant -->
+</aside>
+
+<main class="main-doc">
+<div class="main-body">
+<!-- ============ main content inner start ============ -->
+
+<section class="section-info" id="intro">
+<div class="container">
+<main class="col-12 col-md-12 col-xl-12 py-md-3  bd-content" role="main">
+		  <h1 class="doc-title mt-sm-5 text-center">Overview</h1>
+
+          <p class="bd-lead">The basic bootstraBlogger framework is designed to provide ease by modifying Blogger's Xml code alternate features and adding new services.
+.</p>
+          <h2 id="blogger-version"><div>Blogger version<a class="anchorjs-link " href="#blogger-version" aria-label="Anchor link for: blogger version" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Use the template latest version
+
+ <code class="highlighter-rouge">3</code>:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html</span> <span class="na">b:layoutsVersion=</span><span class="s">'3'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>We Use the 2 gadget version <code class="highlighter-rouge">2</code>:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html</span> <span class="na">b:defaultwidgetversion=</span><span class="s">'2'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:widget</span> <span class="na">version=</span><span class="s">'2'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:widget&gt;</span></code></pre></figure>
+
+<h2 id="page-types"><div>Page types<a class="anchorjs-link " href="#page-types" aria-label="Anchor link for: page types" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>You can set the appearance of blogs, display posts, classes, and others to be different on every page type.</p>
+
+<p>Below is a selection of types of pages to use
+
+<code class="highlighter-rouge">data:view</code>.</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:comment&gt;</span>=== Homepage ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isHomepage'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Item page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isPost'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/&lt;year&gt;/&lt;month&gt;/&lt;permalink&gt;.html --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Static page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isPage'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/p/&lt;permalink&gt;.html --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Search (label) page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.search.label'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/search/label/&lt;name&gt; --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Search (query) page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.search.query'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/search?q=&lt;query&gt; --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Search (default) page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.search and !data:view.search.label and !data:view.search.query'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/search --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Archive page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isArchive'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- 1. https://example.blogspot.com/&lt;year&gt; --&gt;</span>
+  <span class="c">&lt;!-- 2. https://example.blogspot.com/&lt;year&gt;/&lt;month&gt; --&gt;</span>
+  <span class="c">&lt;!-- 3. https://example.blogspot.com/&lt;year&gt;_&lt;month&gt;_&lt;day&gt;_archive.html --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Error page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isError'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/404 --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Preview page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isPreview'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Preview page --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
+
+<span class="nt">&lt;b:comment&gt;</span>=== Layout mode ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isLayoutMode'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://www.blogger.com/blogger.g?blogID=&lt;blogID&gt;#pageelements --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
+
+<h2 id="body-class"><div>Body class<a class="anchorjs-link " href="#body-class" aria-label="Anchor link for: body class" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>In the HTML body tag, there are different classes in each page type.
+
+</p>
+
+<p>Below this is the name of the class for each page type.
+
+</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isHomepage'</span> <span class="na">name=</span><span class="s">'blog-view-home'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isPost'</span> <span class="na">name=</span><span class="s">'blog-view-item'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isPage'</span> <span class="na">name=</span><span class="s">'blog-view-static'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.search.label'</span> <span class="na">name=</span><span class="s">'blog-view-search-label'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.search.query'</span> <span class="na">name=</span><span class="s">'blog-view-search-query'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.search and !data:view.search.label and !data:view.search.query'</span> <span class="na">name=</span><span class="s">'blog-view-search-default'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isArchive'</span> <span class="na">name=</span><span class="s">'blog-view-archive'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isError'</span> <span class="na">name=</span><span class="s">'blog-view-error'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isPreview'</span> <span class="na">name=</span><span class="s">'blog-view-preview'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Homepage --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-home"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Item page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-item"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Static page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-static"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Search (label) page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-search-label"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Search (query) page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-search-query"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Search (default) page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-search-default"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Archive page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-archive"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Error page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-error"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Preview page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-preview"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<p>Example of use:
+
+:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.blog-view-item</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+
+<span class="nc">.blog-view-item</span> <span class="nc">.element</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span></code></pre></figure>
+
+
+        </main>
+
+
+
+<section class="section-info" id="download">
+<div class="container">
+    <main class="col-12 col-md-12 col-xl-12 py-md-3  bd-content" role="main">
+		  	<h1 class="doc-title">Post</h1>
+
+          <p class="bd-lead">Template sections to adjust the appearance of blog posts
+
+.</p>
+          <h2 id="breadcrumb"><div>Breadcrumb<a class="anchorjs-link " href="#breadcrumb" aria-label="Anchor link for: breadcrumb" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Showing location of current page.</p>
+
+<h6 id="source">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/post/blog-breadcrumb.xml</code></pre></figure>
+
+<h6 id="includable">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'blog-breadcrumb'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'!data:view.isHomepage'</span> <span class="na">name=</span><span class="s">'blog-breadcrumb'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="status-message"><div>Status message<a class="anchorjs-link " href="#status-message" aria-label="Anchor link for: status message" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Ujumbe utaonekana juu ya chapisho. Ujumbe utaonekana tu kwenye kurasa za matokeo ya utafutaji, kurasa za lebo, kurasa za kumbukumbu, na kurasa za makosa (404).</p>
+
+<h6 id="source-1">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/post/blog-status-message.xml</code></pre></figure>
+
+<h6 id="includable-1">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'blog-status-message'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-1">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'blog-status-message'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="posts"><div>Posts<a class="anchorjs-link " href="#posts" aria-label="Anchor link for: posts" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Posts are divided into sections according to the page type, to make the posts look different on each page type, you just need to adjust the appearance of the posts in each section.</p>
+
+<p>In creating post views, you need to use them
+ <a href="../includable-post/index.html">including blog posts
+
+</a>.</p>
+
+<h6 id="source-2">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/post/blog-posts.xml</code></pre></figure>
+
+<h6 id="includable-2">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'blog-posts'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-2">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'data:posts.notEmpty'</span> <span class="na">name=</span><span class="s">'blog-posts'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="comments"><div>Comments<a class="anchorjs-link " href="#comments" aria-label="Anchor link for: comments" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>The default comment system for bootblogger
+
+ <strong>Blogger comments</strong>.</p>
+
+<h6 id="source-3">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/post/blog-comments.xml</code></pre></figure>
+
+<h6 id="includable-3">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'blog-comments'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-3">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'data:view.isPost'</span> <span class="na">name=</span><span class="s">'blog-comments'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="pager"><div>Pager<a class="anchorjs-link " href="#pager" aria-label="Anchor link for: pager" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Link to go to next or previous page.
+
+</p>
+
+<h6 id="source-4">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/post/blog-pager.xml</code></pre></figure>
+
+<h6 id="includable-4">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'blog-pager'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-4">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'data:posts.notEmpty and !data:view.isPage'</span> <span class="na">name=</span><span class="s">'blog-pager'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="usage-5"><div>Usage<a class="anchorjs-link " href="#usage-5" aria-label="Anchor link for: usage 5" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Angalia
+
+ <code class="highlighter-rouge">template-src/widgets/b-section-main__Blog1.xml</code>:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:widget</span> <span class="na">id=</span><span class="s">'Blog1'</span> <span class="na">locked=</span><span class="s">'true'</span> <span class="na">title=</span><span class="s">'Blog Posts'</span> <span class="na">type=</span><span class="s">'Blog'</span> <span class="na">version=</span><span class="s">'2'</span> <span class="na">visible=</span><span class="s">'true'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'!data:view.isMobile'</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;b:comment&gt;</span>=== Breadcrumb ===<span class="nt">&lt;/b:comment&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'!data:view.isHomepage'</span> <span class="na">name=</span><span class="s">'blog-breadcrumb'</span><span class="nt">/&gt;</span>
+
+      <span class="nt">&lt;b:comment&gt;</span>=== Status message ===<span class="nt">&lt;/b:comment&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'blog-status-message'</span><span class="nt">/&gt;</span>
+
+      <span class="nt">&lt;b:comment&gt;</span>=== Posts ===<span class="nt">&lt;/b:comment&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'data:posts.notEmpty'</span> <span class="na">name=</span><span class="s">'blog-posts'</span><span class="nt">/&gt;</span>
+
+      <span class="nt">&lt;b:comment&gt;</span>=== Comments ===<span class="nt">&lt;/b:comment&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'data:view.isPost'</span> <span class="na">name=</span><span class="s">'blog-comments'</span><span class="nt">/&gt;</span>
+
+      <span class="nt">&lt;b:comment&gt;</span>=== Pager ===<span class="nt">&lt;/b:comment&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">cond=</span><span class="s">'data:posts.notEmpty and !data:view.isPage'</span> <span class="na">name=</span><span class="s">'blog-pager'</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;/b:if&gt;</span>
+
+  <span class="nt">&lt;/b:includable&gt;</span>
+<span class="nt">&lt;/b:widget&gt;</span></code></pre></figure>
+
+        </main>
+
+
+	
+</div> <!-- container.// -->
+</section> <!-- section-info.// -->
+<section class="section-info" id="license">
+<div class="container">
+<main class="col-12 col-md-12 col-xl-12 py-md-3  bd-content" role="main">
+		  <h1 class="doc-title" id="colors">Includable - Head</h1>
+
+          <p class="bd-lead">Tag title, tag meta, tag link, na nyingine.</p>
+          <h2 id="required-meta-tags"><div>Required meta tags<a class="anchorjs-link " href="#required-meta-tags" aria-label="Anchor link for: required meta tags" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<ul>
+  <li>Set charset na <code class="highlighter-rouge">utf-8</code>.</li>
+  <li>Use responsive meta tags <code class="highlighter-rouge">viewport</code>.</li>
+</ul>
+
+<h6 id="source">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/head/head.requiredMetaTags.xml</code></pre></figure>
+
+<h6 id="includable">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'head.requiredMetaTags'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.requiredMetaTags'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="all-head-content"><div>All-head-content<a class="anchorjs-link " href="#all-head-content" aria-label="Anchor link for: all head content" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Custom <code class="highlighter-rouge">&lt;b:include data='blog' name='all-head-content'/&gt;</code>.</p>
+
+<h6 id="source-1">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/head/head.allHeadContent.xml</code></pre></figure>
+
+<h6 id="includable-1">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'head.allHeadContent'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-1">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.allHeadContent'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="title"><div>Title<a class="anchorjs-link " href="#title" aria-label="Anchor link for: title" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>hati au lebo <code class="highlighter-rouge">&lt;title&gt;</code>.</p>
+
+<h6 id="source-2">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/head/head.title.xml</code></pre></figure>
+
+<h6 id="includable-2">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'head.title'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-2">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.title'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="serp-and-social-tags"><div>SERP and social tags<a class="anchorjs-link " href="#serp-and-social-tags" aria-label="Anchor link for: serp and social tags" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Tag <code class="highlighter-rouge">&lt;meta&gt;</code> dan <code class="highlighter-rouge">&lt;link&gt;</code> untuk <abbr title="Search Engine Results Page">SERP</abbr> dan jejaring sosial.</p>
+<h6 id="source-3">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">- Default/SERP: template-src/includable/head/head.defaultTags.xml
+- Facebook Open Graph: template-src/includable/head/head.facebookTags.xml
+- Twitter Cards: template-src/includable/head/head.twitterTags.xml</code></pre></figure>
+
+<h6 id="includable-3">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Default/SERP --&gt;</span>
+<span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'head.defaultTags'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span>
+<span class="c">&lt;!-- Facebook Open Graph --&gt;</span>
+<span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'head.facebookTags'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span>
+<span class="c">&lt;!-- Twitter Cards --&gt;</span>
+<span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'head.twitterTags'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-3">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:with</span> <span class="na">value=</span><span class="s">'"https://example.com/path/to/image.png"'</span> <span class="na">var=</span><span class="s">'image'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;b:with</span> <span class="na">value=</span><span class="s">'"@username_of_website"'</span> <span class="na">var=</span><span class="s">'twitterUsernameWebsite'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;b:with</span> <span class="na">value=</span><span class="s">'"@username_of_content_creator"'</span> <span class="na">var=</span><span class="s">'twitterUsernameCreator'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.defaultTags'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.facebookTags'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.twitterTags'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/b:with&gt;</span>
+<span class="nt">&lt;/b:with&gt;</span>
+<span class="nt">&lt;/b:with&gt;</span></code></pre></figure>
+
+<h2 id="example-usage"><div>Example usage<a class="anchorjs-link " href="#example-usage" aria-label="Anchor link for: example usage" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.requiredMetaTags'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.title'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.allHeadContent'</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;b:with</span> <span class="na">value=</span><span class="s">'"https://example.com/path/to/image.png"'</span> <span class="na">var=</span><span class="s">'image'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;b:with</span> <span class="na">value=</span><span class="s">'"@username_of_website"'</span> <span class="na">var=</span><span class="s">'twitterUsernameWebsite'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;b:with</span> <span class="na">value=</span><span class="s">'"@username_of_content_creator"'</span> <span class="na">var=</span><span class="s">'twitterUsernameCreator'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.defaultTags'</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.facebookTags'</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'head.twitterTags'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/b:with&gt;</span>
+    <span class="nt">&lt;/b:with&gt;</span>
+    <span class="nt">&lt;/b:with&gt;</span>
+
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+
+    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+
+        </main>
+
+</div> <!-- container.// -->
+</section> <!-- section-info.// -->
+<section class="section-info" id="start">
+	<div class="container">
+	
+
+<main class="col-12 col-md-12 col-xl-12 py-md-3  bd-content" role="main">
+          <h1 class="doc-title" id="typography">Includable - Post</h1>
+          <p class="bd-lead">Includable kutuma blog.</p>
+          <h2 id="post-byline-items"><div>Post byline items<a class="anchorjs-link " href="#post-byline-items" aria-label="Anchor link for: post byline items" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p><em>Item</em> posts that can be organized via a blog post configuration
+
+ (<a href="#" data-toggle="modal" data-target="#modalImgBloggerConfigureBlogPosts">look at the pictures</a>).</p>
+
+<h3 id="header"><div>Header<a class="anchorjs-link " href="#header" aria-label="Anchor link for: header" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display<em>item</em> print in rows<em>header</em>.</p>
+
+<h6 id="source">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.header.xml</code></pre></figure>
+
+<h6 id="includable">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.header'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:headerByline.items.notEmpty'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'wrapper'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'post.header'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
+
+<h3 id="footer"><div>Footer<a class="anchorjs-link " href="#footer" aria-label="Anchor link for: footer" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display
+
+ <em>item</em> print in rows <em>footer</em>.</p>
+
+<h6 id="source-1">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.footer.xml</code></pre></figure>
+
+<h6 id="includable-1">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.footer'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-1">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:footerBylines.notEmpty'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'wrapper'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'post.footer'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
+
+<h2 id="post-items"><div>Post items<a class="anchorjs-link " href="#post-items" aria-label="Anchor link for: post items" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p><em>Item</em> the post below cannot be edited through the configuration of a blog post.</p>
+
+<h3 id="title"><div>Title<a class="anchorjs-link " href="#title" aria-label="Anchor link for: title" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display the title of the post
+
+.</p>
+
+<h6 id="source-2">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.title.xml</code></pre></figure>
+
+<h6 id="includable-2">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.title'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-2">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ heading: "h1|h2|h3|h4|h5|h6"|false, headingClass: "class-name", link: true|false, linkClass: "class-name", noTitleMessage: true|false }'</span> <span class="na">name=</span><span class="s">'post.title'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="author-name"><div>Author name<a class="anchorjs-link " href="#author-name" aria-label="Anchor link for: author name" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Displaying author name.</p>
+
+<h6 id="source-3">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.authorName.xml</code></pre></figure>
+
+<h6 id="includable-3">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.authorName'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-3">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ linkClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorName'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="author-image"><div>Author image<a class="anchorjs-link " href="#author-image" aria-label="Anchor link for: author image" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display the image of the author
+
+.</p>
+
+<h6 id="source-4">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.authorImage.xml</code></pre></figure>
+
+<h6 id="includable-4">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.authorImage'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-4">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, ratioWidth: number, ratioHeight: number, noImage: "https://example.com/path/to/no-image.png"|false, imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Example:</strong></p>
+
+<p>Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
+
+<p>128x128:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 128, ratioWidth: 1, ratioHeight: 1, noImage: "https://placehold.it/128x128/777/eee/?text=NO+IMAGE", imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="dates"><div>Dates<a class="anchorjs-link " href="#dates" aria-label="Anchor link for: dates" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To indicate the date the post was published and the date the post was last updated.</p>
+
+<h6 id="source-5">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">- template-src/includable/post/post.datePublished.xml
+- template-src/includable/post/post.dateUpdated.xml</code></pre></figure>
+
+<h6 id="includable-5">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.datePublished'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span>
+<span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.dateUpdated'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-5">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html">Published: <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ customFormat: "dd/MM/YYYY"|false, timeClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.datePublished'</span><span class="nt">/&gt;</span>
+Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ customFormat: "dd/MM/YYYY"|false, timeClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.dateUpdated'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Format:</strong></p>
+
+<table class="table-responsive">
+  <thead>
+    <tr>
+      <th>Period</th>
+      <th>Symbol</th>
+      <th>Example output</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Year</td>
+      <td><code>YY</code></td>
+      <td><code>17</code></td>
+      <td>Year, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>YYYY</code></td>
+      <td><code>2017</code></td>
+      <td>Year, 4 digits</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Month</td>
+      <td><code>M</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Month, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>MM</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Month, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>MMM</code></td>
+      <td><code>Jan</code>, <code>Nov</code></td>
+      <td>Month, 3 Letters</td>
+    </tr>
+    <tr>
+      <td><code>MMMM</code></td>
+      <td><code>January</code>, <code>November</code></td>
+      <td>Month, full name</td>
+    </tr>
+    <tr>
+      <td><code>MMMMM</code></td>
+      <td><code>J</code>, <code>N</code></td>
+      <td>Month, 1st letter</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Week</td>
+      <td><code>w</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Week of the year, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>ww</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Week of the year, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>W</code></td>
+      <td><code>4</code></td>
+      <td>Week of the month, 1 digit</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Day</td>
+      <td><code>d</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Day of the month, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>dd</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Day of the month, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>D</code></td>
+      <td><code>1</code>, <code>55</code>, <code>362</code></td>
+      <td>Day of the year, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>DD</code></td>
+      <td><code>01</code>, <code>55</code>, <code>362</code></td>
+      <td>Day of the year, minimum 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>DDD</code></td>
+      <td><code>001</code>, <code>055</code>, <code>362</code></td>
+      <td>Day of the year, minimum 3 digits</td>
+    </tr>
+    <tr>
+      <td><code>F</code></td>
+      <td><code>3</code></td>
+      <td>Xth day of the month. Example, the 3rd Tuesday of the month.</td>
+    </tr>
+    <tr>
+      <td><code>E</code></td>
+      <td><code>M</code>, <code>T</code></td>
+      <td>Name of the day of the week. 1 letter</td>
+    </tr>
+    <tr>
+      <td><code>EE</code></td>
+      <td><code>Mo</code>, <code>Tu</code></td>
+      <td>Name of the day of the week. 2 letters</td>
+    </tr>
+    <tr>
+      <td><code>EEE</code></td>
+      <td><code>Mon</code>, <code>Tue</code></td>
+      <td>Name of the day of the week. 3 letters</td>
+    </tr>
+    <tr>
+      <td><code>EEEE</code></td>
+      <td><code>Monday</code>, <code>Tuesday</code></td>
+      <td>Full name of the day of the week.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Time of day</td>
+      <td><code>aaaa</code></td>
+      <td><code>AM</code>, <code>PM</code></td>
+      <td rowspan="3">Names may vary depending on the region.</td>
+    </tr>
+    <tr>
+      <td><code>bbbb</code></td>
+      <td rowspan="2"><code>Morning</code>, <code>Afternoon</code>, <code>Evening</code></td>
+    </tr>
+    <tr>
+      <td><code>BBBB</code></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hour</td>
+      <td><code>h</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Time [1-12], minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>hh</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Time [1-12], 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>H</code></td>
+      <td><code>1</code>, <code>21</code></td>
+      <td>Time [0-23], minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>HH</code></td>
+      <td><code>01</code>, <code>21</code></td>
+      <td>Time [0-23], 2 digits</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Minute</td>
+      <td><code>m</code></td>
+      <td><code>1</code>, <code>59</code></td>
+      <td>Minute, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>mm</code></td>
+      <td><code>01</code>, <code>59</code></td>
+      <td>Minute, 2 digits</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="number-of-comments"><div>Number of comments<a class="anchorjs-link " href="#number-of-comments" aria-label="Anchor link for: number of comments" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display the number of comments per post. If you use the Google+ feedback system, it just shows up
+ <code class="highlighter-rouge">&lt;data:messages.comments/&gt;</code>.</p>
+
+<h6 id="source-6">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.numComments.xml</code></pre></figure>
+
+<h6 id="includable-6">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.numComments'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-6">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ linkClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.numComments'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
+
+<h3 id="labels"><div>Labels<a class="anchorjs-link " href="#labels" aria-label="Anchor link for: labels" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display the post tag
+
+.</p>
+
+<h6 id="source-7">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.labels.xml</code></pre></figure>
+
+<h6 id="includable-7">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.labels'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-7">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ comma: true|false, maxResults: number, labelLinkClass: "class-name", unlabelledClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.labels'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="share"><div>Share<a class="anchorjs-link " href="#share" aria-label="Anchor link for: share" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display the share button
+
+.</p>
+
+<h6 id="source-8">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.share.xml</code></pre></figure>
+
+<h6 id="includable-8">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.share'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-8">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ parentDivClass: "dropdown|dropup|class-name", dropdownToggleLinkClass: "class-name", dropdownToggleType: "icon|text|all", dropdownMenuClass: "dropdown-menu", dropdownItemLinkClass: "dropdown-item", dropdownItemIcon: true|false }'</span> <span class="na">name=</span><span class="s">'post.share'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="featured-image"><div>Featured image<a class="anchorjs-link " href="#featured-image" aria-label="Anchor link for: featured image" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display
+
+ <em>featured image</em>.</p>
+
+<h5 id="using-html-img"><div>Using HTML <code class="highlighter-rouge">&lt;img&gt;</code><a class="anchorjs-link " href="#using-html-img" aria-label="Anchor link for: using html img" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h5>
+
+<h6 id="source-9">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.featuredImage.xml</code></pre></figure>
+
+<h6 id="includable-9">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.featuredImage'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-9">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, sourceSet: [number]|false, sourceSizes: "sizes"|false, ratioWidth: number, ratioHeight: number, link: true|false, noImage: "https://example.com/path/to/no-image.png"|false, imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Notation:</strong></p>
+
+<p>Non-responsive: Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
+
+<p>Responsive: Width = <code class="highlighter-rouge">sourceSet</code>, Height = ((<code class="highlighter-rouge">sourceSet</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
+
+<p><strong>Example without <code class="highlighter-rouge">srcset</code> and <code class="highlighter-rouge">sizes</code>:</strong></p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 512, sourceSet: false, sourceSizes: false, ratioWidth: 16, ratioHeight: 9, link: true, noImage: "https://placehold.it/512x288/777/eee/?text=NO+IMAGE", imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Example with <code class="highlighter-rouge">srcset</code>, but without <code class="highlighter-rouge">sizes</code>:</strong></p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Example 1: `false` --&gt;</span>
+<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 256, sourceSet: [256, 512, 1280, 1600], sourceSizes: false, ratioWidth: 16, ratioHeight: 9, link: true, noImage: "https://placehold.it/256x144/777/eee/?text=NO+IMAGE", imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Example 2: `100vw` --&gt;</span>
+<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 256, sourceSet: [256, 512, 1280, 1600], sourceSizes: "100vw", ratioWidth: 16, ratioHeight: 9, link: true, noImage: "https://placehold.it/256x144/777/eee/?text=NO+IMAGE", imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Example with <code class="highlighter-rouge">srcset</code> and <code class="highlighter-rouge">sizes</code>:</strong></p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 256, sourceSet: [256, 512, 1280, 1600], sourceSizes: "(max-width: 575px) 256px, (max-width: 767px) 512px, (max-width: 991px) 1280px, 1600px", ratioWidth: 16, ratioHeight: 9, link: true, noImage: "https://placehold.it/256x144/777/eee/?text=NO+IMAGE", imageClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h5 id="using-css-background-image"><div>Using CSS <code class="highlighter-rouge">background-image</code><a class="anchorjs-link " href="#using-css-background-image" aria-label="Anchor link for: using css background image" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h5>
+
+<p><code class="highlighter-rouge">post.featuredImageBg</code> usitumie<code class="highlighter-rouge">srcset</code> dan <code class="highlighter-rouge">sizes</code>.</p>
+
+<h6 id="source-10">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.featuredImageBg.xml</code></pre></figure>
+
+<h6 id="includable-10">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.featuredImageBg'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-10">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'class-name'</span><span class="nt">&gt;</span><span class="c">&lt;!-- Target --&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, ratioWidth: number, ratioHeight: number, noImage: "https://example.com/path/to/no-image.png"|false, style: "min-height: &lt;number&gt;&lt;units&gt;;" }'</span> <span class="na">name=</span><span class="s">'post.featuredImageBg'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><strong>Example:</strong></p>
+
+<p>Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'class-name'</span><span class="nt">&gt;</span><span class="c">&lt;!-- Target --&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 512, ratioWidth: 16, ratioHeight: 9, noImage: "https://placehold.it/512x288/777/eee/?text=NO+IMAGE", style: "min-height: 288px;" }'</span> <span class="na">name=</span><span class="s">'post.featuredImageBg'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="snippet"><div>Snippet<a class="anchorjs-link " href="#snippet" aria-label="Anchor link for: snippet" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Showing summary of posts.</p>
+
+<h6 id="source-11">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.snippet.xml</code></pre></figure>
+
+<h6 id="includable-11">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.snippet'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-11">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ length: number, links: true|false, linebreaks: true|false, ellipsis: true|false, notHasJumpLink: true|false, parentDivClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.snippet'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p>When using posts<em>jump break</em> dan <code class="highlighter-rouge">notHasJumpLink: true</code> then what is shown is<code class="highlighter-rouge">&lt;data:post.body/&gt;</code>.</p>
+
+<h3 id="body"><div>Body<a class="anchorjs-link " href="#body" aria-label="Anchor link for: body" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>As an alternative
+
+ <code class="highlighter-rouge">&lt;data:post.body/&gt;</code>.</p>
+
+<h6 id="source-12">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.body.xml</code></pre></figure>
+
+<h6 id="includable-12">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.body'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-12">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ parentDivClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.body'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="jump-link"><div>Jump link<a class="anchorjs-link " href="#jump-link" aria-label="Anchor link for: jump link" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>To display <em>jump link</em>.</p>
+
+<h6 id="source-13">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/post/post.jumpLink.xml</code></pre></figure>
+
+<h6 id="includable-13">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.jumpLink'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-13">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ linkClass: "btn btn-primary", parentDivClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.jumpLink'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+
+        <div></div></main>
+
+	<main class="col-12 col-md-12 col-xl-12 py-md-3 " role="main">
+          <h1 class="doc-subtitle" id="content">Includable - Assets</h1>
+          <p class="bd-lead">CSS, JavaScript, icons, na nyingine.</p>
+          <h2 id="required-css"><div>Required CSS<a class="anchorjs-link " href="#required-css" aria-label="Anchor link for: required css" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<ul>
+  <li>Bootstrap</li>
+  <li>Boostrablogger</li>
+  <li>Font Awesome (CDN) - <a href="http://fontawesome.io/">http://fontawesome.io/</a></li>
+</ul>
+
+<h6 id="includable">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'css.required'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage">Usage</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'css.required'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="required-js"><div>Required JS<a class="anchorjs-link " href="#required-js" aria-label="Anchor link for: required js" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<ul>
+  <li>jQuery (CDN) - <a href="https://jquery.com/">https://jquery.com/</a></li>
+  <li>Popper.js (CDN) - <a href="https://popper.js.org/">https://popper.js.org/</a></li>
+  <li>Bootstrap</li>
+</ul>
+
+<h6 id="includable-1">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'js.required'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-1">Matumizi</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'js.required'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="icons"><div>Icons<a class="anchorjs-link " href="#icons" aria-label="Anchor link for: icons" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<h3 id="blogger"><div>Blogger<a class="anchorjs-link " href="#blogger" aria-label="Anchor link for: blogger" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<h6 id="source">Source</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includable/assets/icons/icons.blogger.xml</code></pre></figure>
+
+<h6 id="includable-2">Includable</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'icons.blogger'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-2">Matumizi</h6>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ width: number, height: number, fillBg: "#ff5722", fillB: "#fff", class: "class-name" }'</span> <span class="na">name=</span><span class="s">'icons.blogger'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Mfano:</strong></p>
+
+<div class="bd-example">
+  <svg class="align-middle" width="24" height="24" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
+    <title>Blogger</title>
+    <path fill="#ff5722" d="M612, 510c0, 56.1-45.9, 102-102, 102H102C45.9, 612, 0, 566.1, 0, 510V102C0, 45.9, 45.9, 0, 102, 0h408 c56.1, 0, 102, 45.9, 102, 102V510z"></path>
+    <path fill="#fff" d="m 483.32742, 262.81768 c -7.88887, -3.44838 -41.73045, 0.38183 -51.13171, -8.29282 -6.63342, -6.25243 -7.05677, -17.56407 -9.6465, -32.65819 -4.33566, -25.27222 -6.14292, -30.99964 -10.65377, -40.95102 -16.41131, -35.46224 -55.75058, -65.82947 -91.48993, -65.82947 l -82.8361, 0 c -65.17519, 0 -118.42655, 54.35078 -118.42655, 120.6814 l 0, 140.71541 c 0, 66.2113 53.25136, 120.43083 118.42655, 120.43083 l 136.10207, 0 c 65.17226, 0 118.06159, -54.21953 118.43823, -120.43083 l 0.74743, -97.4615 c 0, 0 0, -12.05144 -9.52972, -16.20381 m -244.26024, -49.11258 65.67737, 0 c 12.5311, 0 22.68271, 10.33321 22.68271, 22.95738 0, 12.63611 -10.15161, 23.08864 -22.68271, 23.08864 l -65.67737, 0 c -12.53111, 0 -22.6827, -10.45253 -22.6827, -23.08864 0.003, -12.62417 10.15451, -22.95738 22.6827, -22.95738 m 133.47731, 183.9574 -133.47731, 0 c -12.53111, 0 -22.6827, -10.46447 -22.6827, -22.95739 0, -12.6361 10.15159, -22.96932 22.6827, -22.96932 l 133.47731, 0 c 12.40265, 0 22.55132, 10.33322 22.55132, 22.96932 0.003, 12.49292 -10.14867, 22.95739 -22.55132, 22.95739"></path>
+  </svg>
+  Blogger
+</div>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ width: 24, height: 24, fillBg: "#ff5722", fillB: "#fff", class: "align-middle" }'</span> <span class="na">name=</span><span class="s">'icons.blogger'</span><span class="nt">/&gt;</span> Blogger</code></pre></figure>
+
+<h2 id="example-usage-css-and-javascript"><div>Mfano hai: CSS and JavaScript<a class="anchorjs-link " href="#example-usage-css-and-javascript" aria-label="Anchor link for: example usage css and javascript" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'css.required'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Jambo!<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'js.required'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+
+        </main>
+	
+	
+	<main class="col-12 col-md-12 bd-content" role="main">
+          <h1 class="doc-subtitle" id="icons">Muundo/Layout mode CSS</h1>
+          <p class="bd-lead">CSS na mpangilio wa Blogger.</p>
+          <p>Be clear
+
+ <a href="#" data-toggle="modal" data-target="#modalImgBloggerLayout">look at this picture</a>.</p>
+
+<h2 id="source"><div>Source<a class="anchorjs-link " href="#source" aria-label="Anchor link for: source" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Angalia <code class="highlighter-rouge">template-src/layout-mode.css</code>:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* Clearfix */</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.container</span><span class="nd">::after</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.section</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">""</span><span class="p">;</span>
+  <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Container */</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Grid */</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-1</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-2</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-3</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-4</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-5</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-6</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-7</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-8</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-9</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-10</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-11</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-12</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-1</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">8.33333333%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-2</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">16.66666667%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-3</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">25%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-4</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">33.33333333%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-5</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">41.66666667%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-6</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-7</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">58.33333333%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-8</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">66.66666667%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-9</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">75%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-10</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">83.33333333%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-11</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">91.66666667%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.blogger-col-12</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Lists */</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nt">ul</span><span class="o">,</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Navbar */</span>
+<span class="nt">body</span><span class="nf">#layout</span> <span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="grid-usage"><div>Grid usage<a class="anchorjs-link " href="#grid-usage" aria-label="Anchor link for: grid usage" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Apply for something with a label<code class="highlighter-rouge">b:section</code>. Customize the template template.</p>
+
+<table class="table table-bordered table-striped table-responsive">
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Grid behavior</th>
+      <td>Horizontal at all times</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.blogger-col-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'container'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Main --&gt;</span>
+  <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'main blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'b-section-main'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">name=</span><span class="s">'Main'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+  <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
+
+  <span class="c">&lt;!-- Sidebar --&gt;</span>
+  <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'sidebar blogger-col-4'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'b-section-sidebar'</span> <span class="na">name=</span><span class="s">'Sidebar'</span><span class="nt">&gt;&lt;/section&gt;</span>
+  <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>The results will be just as well
+
+<a href="#" data-toggle="modal" data-target="#modalImgBloggerLayoutGridExample">this picture
+
+</a>.</p>
+
+<p> gridi ya  Bootstrap
+
+:</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'container'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'row'</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Main --&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'col-md-8 col-lg-9 main blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'b-section-main'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">name=</span><span class="s">'Main'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+    <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
+
+    <span class="c">&lt;!-- Sidebar --&gt;</span>
+    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'col-md-4 col-lg-3 sidebar blogger-col-4'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'b-section-sidebar'</span> <span class="na">name=</span><span class="s">'Sidebar'</span><span class="nt">&gt;&lt;/section&gt;</span>
+    <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.row --&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.container --&gt;</span></code></pre></figure>
+
+
+        </main>
+	
+	          <h1 class="" id="helper_classes">Default markups</h1>
+
+	<main class="col-12 col-md-12 col-xl-12  bd-content" role="main">
+		  
+          <p class="bd-lead">Default Markups These are the features that hold the entire blogger in check because if you have a reset here is where the reset stays and holds records even when the blogger closes and is where the archive of your blogger resides..</p>
+          <p>Bootrablogger optimizes gadget using tags<code class="highlighter-rouge">b:defaultmarkups</code> na <code class="highlighter-rouge">b:defaultmarkup</code>, This tag can be used to create custom gadget models in the template you create.</p>
+
+<h2 id="usage"><div>Usage<a class="anchorjs-link " href="#usage" aria-label="Anchor link for: usage" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:defaultmarkups&gt;</span>
+  <span class="nt">&lt;b:defaultmarkup</span> <span class="na">type=</span><span class="s">'WIDGET_TYPE'</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/b:defaultmarkup&gt;</span>
+<span class="nt">&lt;/b:defaultmarkups&gt;</span></code></pre></figure>
+
+<ul>
+  <li>Tag <code class="highlighter-rouge">b:defaultmarkups</code>this is placed under<code>/body</code> put it before
+
+ <code class="highlighter-rouge">&lt;/head&gt;</code> au<code class="highlighter-rouge">&lt;/body&gt;</code>.</li>
+  <li>Tag <code class="highlighter-rouge">b:defaultmarkups</code> may contain only tags
+
+ <code class="highlighter-rouge">b:defaultmarkup</code>.</li>
+  <li>Tag <code class="highlighter-rouge">b:defaultmarkup</code> may contain only tags <code class="highlighter-rouge">b:includable</code>.</li>
+</ul>
+
+<p>Lihat <code class="highlighter-rouge">template-src/default-markups</code> learning.</p>
+
+<h2 id="customized-gadgets"><div>The components used to create a blogger and section in addition are right here<a class="anchorjs-link " href="#customized-gadgets" aria-label="Anchor link for: customized gadgets" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blog Archive</td>
+      <td><code>BlogArchive</code></td>
+    </tr>
+    <tr>
+      <td>Blog Search</td>
+      <td><code>BlogSearch</code></td>
+    </tr>
+    <tr>
+      <td>Contact Form</td>
+      <td><code>ContactForm</code></td>
+    </tr>
+    <tr>
+      <td>Featured Post</td>
+      <td><code>FeaturedPost</code></td>
+    </tr>
+    <tr>
+      <td>Follow by Email</td>
+      <td><code>FollowByEmail</code></td>
+    </tr>
+    <tr>
+      <td>Page Header</td>
+      <td><code>Header</code></td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td><code>Image</code></td>
+    </tr>
+    <tr>
+      <td>Labels</td>
+      <td><code>Label</code></td>
+    </tr>
+    <tr>
+      <td>Popular Posts</td>
+      <td><code>PopularPosts</code></td>
+    </tr>
+    <tr>
+      <td>Translate</td>
+      <td><code>Translate</code></td>
+    </tr>
+  </tbody>
+</table>
+
+        </main>
+
+	</div>
+	<div class="container-fluid p-3 small p-md-5">
+<p>This article has been created by Design by <a href="https://github.com/luckmoshy?tab=overview&amp;from=2019-03-01&amp;to=2019-03-31" rel="noopener" target="_blank">BootstraBlogger team included</a> <code class=" language-html">Webublografiki</code> with various help of
+<a href="https://github.com/luckmoshy?tab=overview&amp;from=2019-03-01&amp;to=2019-03-31" rel="noopener" target="_blank">Code Contributors</a>.</p>
+<p>Articles and Codes are owned by license under <a href="https://raw.githubusercontent.com/luckmoshy/luckmoshy.github.io/master/Hakimilik.text" rel="noopener" target="_blank">MIT license conditions.</a></p>
+<p>Articles are under the protection of<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0; margin-left:34px;" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png"></a>  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
+ <br>The Content and Content of this article is supported by <a href="https://www.freebloggertemplatetz.com/" rel="noopener" target="_blank">developers of BoostraBlogger (original BloggerTemlate design)</a>.</p><p>Xml Blogger Materials are collected through <a href="https://www.blogger.com/about/?r=1-null_user" rel="noopener" target="_blank">Google Blogger</a>, 
+<a href="https://www.blogger.com/blogger.g?blogID=486134160647218857#allposts" rel="noopener" target="_blank">Blogger</a>, <a href="https://support.google.com/blogger/community?hl=en" rel="noopener" target="_blank">Blogger Community</a> and
+ <a href="https://support.google.com/blogger/?hl=en#topic=3339243" rel="noopener" target="_blank">Google Blogger Help</a> from <a href="https://www.blogger.com/about/?r=1-null_user" rel="noopener" target="_blank">www.google.com</a>
+ </p>
+ <p> </p>
+ </div>
+</section> <!-- section-info.// -->
+
+</body>
+
+<!-- Mirrored from bootstrap-ecommerce.com/doc.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Nov 2019 04:10:24 GMT -->
+</html>
