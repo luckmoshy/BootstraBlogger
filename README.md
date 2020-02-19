@@ -4,15 +4,23 @@
     <style>
     .s {
     color: 
-    #d44950;
+    #d44950!mportant;
 }
 .na {
     color: 
-    #4f9fcf;
+    #4f9fcf!mportant;
 }
       .nt {
     color: 
-    #2f6f9f;
+    #2f6f9f!mportant;
+}
+      .s {
+    color: 
+    #d44950!mportant;
+}
+      .na {
+    color: 
+    #4f9fcf!mportant;
 }
     </style>
     <!-- Required meta tags -->
