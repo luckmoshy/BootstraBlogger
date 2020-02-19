@@ -18,6 +18,33 @@
     color: 
     #d44950!mportant;
 }
+      .highlight pre code {
+    font-size: inherit;
+    color: 
+    #292b2c;
+}
+      code, kbd, pre, samp {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 1em;
+}
+      .bd-clipboard + .highlight {
+    margin-top: 0;
+}
+.highlight {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+.highlight {
+    padding: 1rem;
+    margin: 1rem -15px;
+        margin-top: 1rem;
+        margin-right: -15px;
+        margin-left: -15px;
+    background-color: 
+    #f7f7f9;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
       .na {
     color: 
     #4f9fcf!mportant;
