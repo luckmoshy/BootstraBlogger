@@ -1,7 +1,12 @@
 ## Bootstrablogger Ui and Xml
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 (https://luckmoshy.github.io/bootstrablogger/) .
-
+<style>
+.s {
+    color: 
+    #d44950;
+}
+</style>
 BootstraBlogger gives you a full solution for all your Blogger Portfolio,Landing and E-commerce product catalogs make up your design workflow with ready-to-use beautifully designed sample blogger components for your daily projects. 
 ### Markdown
 
