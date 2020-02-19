@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+    .s {
+    color: 
+    #d44950;
+}
+.na {
+    color: 
+    #4f9fcf;
+}
+      .nt {
+    color: 
+    #2f6f9f;
+}
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
