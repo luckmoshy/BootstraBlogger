@@ -5,7 +5,7 @@
 BootstraBlogger gives you a full solution for all your Blogger Portfolio,Landing and E-commerce product catalogs make up your design workflow with ready-to-use beautifully designed sample blogger components for your daily projects. 
 ### Bootstrablogger
 
-The main purpose of this Booststrablogger Components (Css Framework) is to give a full solution to designers and developers in the categories of all type of blogger Themes, online marketplaces, Portfolio platforms and product landing blogger. This kit provides multiple combinations of examples and sample section and widgets for you to work on including numerous components and element styles. 
+The main purpose of this Bootstrablogger Components (Css Framework) is to give a full solution to designers and developers in the categories of all type of blogger Themes/template, online marketplaces, Portfolio platforms and product landing blogger. This kit provides multiple combinations of examples and sample sections and widgets for you to work on including numerous components and element styles. 
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:comment&gt;</span>=== Homepage ===<span class="nt">&lt;/b:comment&gt;</span>
 <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isHomepage'</span><span class="nt">&gt;</span>
