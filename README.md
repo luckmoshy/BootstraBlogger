@@ -97,7 +97,6 @@ The main purpose of this Booststrablogger Components (Css Framework) is to give 
 
 <span class="c">&lt;!-- Preview page --&gt;</span>
 <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-preview"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span></code></pre></figure>
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### 
 
