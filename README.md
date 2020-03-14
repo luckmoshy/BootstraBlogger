@@ -103,6 +103,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 
-### Support or Contact
+### Mixing grid Row
+<figure class="highlight"><pre class=" language-html"><code class=" language-html" data-lang="html"><span class="prism-token prism-tag"><span class="prism-token prism-tag"><span class="prism-token prism-punctuation">&lt;</span><span class="prism-token prism-namespace">b:</span>section</span> <span class="prism-token prism-attr-name">class</span><span class="prism-token prism-attr-value"><span class="prism-token prism-punctuation">=</span><span class="prism-token prism-punctuation">'</span>wg-row wg wg-bg-info wg-title-secondary wg-row wg-1-sm-6 wg-mt-2 wg-2-sm-6 wg-3-sm-6  wg-4-sm-6 wg-1-lg-7 wg-2-lg-5 wg-3-lg-3 wg-4-lg-9<span class="prism-token prism-punctuation">'</span></span> <span class="prism-token prism-attr-name">id</span><span class="prism-token prism-attr-value"><span class="prism-token prism-punctuation">=</span><span class="prism-token prism-punctuation">'</span>sectionId<span class="prism-token prism-punctuation">'</span></span><span class="prism-token prism-punctuation">&gt;</span></span><span class="prism-token prism-tag"><span class="prism-token prism-tag"><span class="prism-token prism-punctuation">&lt;/</span><span class="prism-token prism-namespace">b:</span>section</span><span class="prism-token prism-punctuation">&gt;</span></span></code></pre></figure>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Check out our [documentation]() or [contact support]() and we’ll help you sort it out.
